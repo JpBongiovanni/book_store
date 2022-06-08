@@ -65,3 +65,7 @@ Sources Used:
 3. Help with breaking down the steps to run off a git clone command - https://stackoverflow.com/questions/37094032/how-to-run-cloned-django-project
 4. Django secret-key generator - https://miniwebtool.com/django-secret-key-generator/
 5. Simple steps to create postgreSQL db - https://www.section.io/engineering-education/django-app-using-postgresql-database/
+6. Various sites to learn more about Python Json interaction:
+    https://simplejson.readthedocs.io/en/latest/
+    https://docs.python.org/3/library/json.html
+    https://stackoverflow.com/questions/19483351/converting-json-string-to-dictionary-not-list
