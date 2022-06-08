@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "title": "NKJV",
+      "isbn13": "9780882705255",
+      "isbn": "0882705253",
+      "image": "https://g.christianbook.com/dg/product/cbd/b70/705255.gif",
+      "id": "234567",
+      "link": "https://www.christianbook.com/apps/product?item_no=705255",
+      "customer_rating": 4.87
+    },
+    {
+      "title": "NKJV Evidence",
+      "isbn13": "9780882705071",
+      "isbn": "0882705075",
+      "image": "https://g.christianbook.com/dg/product/web/b70/705071.gif",
+      "id": "123456",
+      "link": "https://www.christianbook.com/apps/product?item_no=705071",
+      "customer_rating": 4.87
+    }
+  ]
+}

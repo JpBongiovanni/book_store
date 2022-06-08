@@ -1,11 +1,23 @@
-Issues:
-1. url string vs integer
-2. ampersands not rendering properly (used auto escape off)
-3. json upload and added to database without duplicating
+Deployed Web Page: https://christianbookcatalog.herokuapp.com/
+Github: https://github.com/JpBongiovanni/book_store
 
-Possible Issues:
-There is no validation to check if the POST data in the upload field is json data. Since this application would not be made public
-and only used by the company, no validation would be necessary to protect the database from a possible security breach. Unless
-it was deemed necessary just in case there is some sort of disgruntled employee.
+Website Instructions: Navigate to the "upload new products" page. Copy The entirety of the text in static/product_app/json/products.json on github page and paste
+it into the text area. Hit submit. The contents of the Json file will be added to the database and you will be redirected to the home page. Improper
+Json format will result in the upload new products page being reloaded. Items will not duplicate on submission.
 
-I left debug mode set to True just in case you need to see what's happening
+How to Run:
+
+
+
+Comments:
+More detailed comments are left in my views.py and settings.py files. These comments 
+
+Known Bugs:
+1. Auto escape in my HTML is working on some pages but not in others. The Lego trademark symbol renders correctly in the main page, but not 
+on its own page or search result despite auto escape being added to the HTML
+2. I am still working on a way for an "alert" function to pop up when improper Json is entered into the text area
+
+
+Sources Used:
+1. Search Vector Documentation - https://docs.djangoproject.com/en/3.2/ref/contrib/postgres/search/
+2. Auto Escaping Documentation - https://code.djangoproject.com/wiki/AutoEscaping

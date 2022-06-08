@@ -10,7 +10,9 @@
                     <div class="card p-1 shadow" style="width: 18rem; height: 390px;">
                         <a href="single_item/{{item.id}}"><img src="{{item.image}}" alt="{{item.title}}" style="height: 10vh; width: 10vh;"></a>
                         <div class="card-body">
+                            {% autoescape off %}
                             <a href="single_item/{{item.id}}"><h5 class="card-title">{{item.title}}</h5></a>
+                            {% endautoescape %}
                             <p>ID: {{item.id}}</p>
                             {% if item.isbn13 %}
                             <p>ISBN13: {{item.isbn13}}</p>
