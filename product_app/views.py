@@ -5,7 +5,7 @@ from django.contrib.postgres.search import SearchVector, SearchQuery
 from django.db.models import Q
 import json
 import re
-import pyautogui as pag
+# import pyautogui as pag
 
 
 def add_more_product(request):
@@ -22,8 +22,8 @@ def add_more_product(request):
                 exists = SaleItem.objects.filter(id__contains=item['id'])
                     
                 if exists:
-                    itemId = item['id']
-                    pag.alert(text=f'{"Item Id: " + itemId + " already exists"}', title="Duplicate Error")
+                    # itemId = item['id']
+                    # pag.alert(text=f'{"Item Id: " + itemId + " already exists"}', title="Duplicate Error")
                     continue
                 else:
                     SaleItem.objects.create(
@@ -38,12 +38,12 @@ def add_more_product(request):
             return redirect('/')
         except Exception as e:
             print(e)
-            pag.alert(text="Please format your text to Json format", title="Improper Format")
+            # pag.alert(text="Please format your text to Json format", title="Improper Format")
             return redirect('/upload_products')
         
     except Exception as e:
         print(e)
-        pag.alert(text="Please format your text to Json format", title="Improper Format")
+        # pag.alert(text="Please format your text to Json format", title="Improper Format")
         return redirect('/upload_products')
 
 def upload_products(request):
