@@ -50,9 +50,15 @@ def upload_products(request):
     return render(request, "upload_products.html", {})
 
 def index(request):
-    context = {
-        "items": SaleItem.objects.all(),
-    }
+    
+    if SaleItem.objects.all():
+        context = {
+            "items": SaleItem.objects.all(),
+        }
+    else:
+        context = {
+            "nothing": "nothing"
+        }
         
     return render(request, 'index.html', context)
 
