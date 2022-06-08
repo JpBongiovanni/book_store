@@ -14,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = os.getenv('SECRET_KEY', '')
+SECRET_KEY = os.getenv('SECRET_KEY', '') or config('SECRET_KEY')
 
 
 
@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         # 'PASSWORD': config('DB_PASSWORD'),
-        'PASSWORD': os.getenv('DB_PASSWORD', ''),
+        'PASSWORD': os.getenv('DB_PASSWORD', '') or config('DB_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
