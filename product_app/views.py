@@ -51,14 +51,9 @@ def upload_products(request):
 
 def index(request):
     
-    if SaleItem.objects.all():
-        context = {
-            "items": SaleItem.objects.all(),
-        }
-    else:
-        context = {
-            "nothing": "nothing"
-        }
+    context = {
+        "items": SaleItem.objects.all(),
+    }
         
     return render(request, 'index.html', context)
 
